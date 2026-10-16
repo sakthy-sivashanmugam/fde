@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# Environment variables and secrets
+.env
+
+# IDE files
+.vscode/
+
+# Generated logs
+*.log
+
+# Healthcare dataset
+data/diabetic_data.csv
+
+# Pytest generated files
+.pytest_cache/
