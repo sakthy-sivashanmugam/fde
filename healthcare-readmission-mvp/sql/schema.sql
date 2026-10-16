@@ -1,4 +1,4 @@
-CREATE TABLE patient_encounters (
+CREATE TABLE IF NOT EXISTS patient_encounters (
     encounter_id BIGINT PRIMARY KEY,
     patient_nbr BIGINT NOT NULL,
     age VARCHAR(20),
@@ -15,7 +15,7 @@ CREATE TABLE patient_encounters (
     risk_level VARCHAR(10)
 );
 
-CREATE TABLE care_interventions (
+CREATE TABLE IF NOT EXISTS care_interventions (
     intervention_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     encounter_id BIGINT NOT NULL UNIQUE,
     status VARCHAR(30) NOT NULL DEFAULT 'PENDING_REVIEW',
